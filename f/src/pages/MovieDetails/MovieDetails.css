@@ -1,0 +1,244 @@
+/* Full page */
+.movie-details {
+  /* Use global background; no local dark fill */
+  background: transparent;
+  min-height: 100vh;
+  padding: 60px 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.details-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* Poster */
+.poster-box img {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Info section */
+.info-box {
+  flex: 1;
+}
+
+.lang {
+  color: #ff004c;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+.star {
+  color: #ffcc00;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+  max-width: 700px;
+}
+
+.meta {
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.trailer-btn,
+.ticket-btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.trailer-btn {
+  background: #333;
+  color: #fff;
+}
+
+.ticket-btn {
+  background: #ff004c;
+  color: #fff;
+}
+
+
+/* Modal White Box */
+.seat-count-box {
+  background: #fff;
+  color: #000;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px auto;
+  width: fit-content;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* White box modal */
+.seat-modal {
+  background: #fff;
+  color: #000;
+  border-radius: 16px 16px 0 0;
+  width: 400px;
+  max-width: 90%;
+  padding: 30px 20px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Title */
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Scooter box (icon placeholder) */
+.scooter-box {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Seat number row */
+.seat-number-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.seat-number {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #f9f9f9;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seat-number:hover {
+  background: #eee;
+}
+
+.seat-number.active {
+  background: #ff004c;
+  color: #fff;
+  border-color: #ff004c;
+}
+
+/* Confirm button */
+.confirm-btn {
+  background: #ff004c;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+.confirm-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+/* Category row */
+.category-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.category-btn {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: #eee;
+}
+
+.category-btn.active {
+  background: #ff004c;
+  color: #fff;
+  border-color: #ff004c;
+}
