@@ -21,44 +21,6 @@ A full-stack web application for booking movie and show tickets with an admin da
 **Cloud Services**: Cloudinary for image/video hosting  
 **Email**: Nodemailer for notifications  
 
-## 📁 Project Structure
-
-```
-QuickShow/
-├── frontend/      # User-facing React application
-├── admin/         # Admin dashboard for management
-└── backend/       # Express API server
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v16+) and npm
-- MongoDB database
-- Cloudinary account
-
-### Backend Setup
-```bash
-cd backend
-npm install
-# Add .env file with PORT, MONGODB_URI, CLOUDINARY credentials
-npm start
-```
-
-### Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### Admin Setup
-```bash
-cd admin
-npm install
-npm run dev
-```
-
 ## 📦 Dependencies
 
 **Backend**: Express, Mongoose, Cloudinary, CORS, Multer, Nodemailer  
@@ -72,21 +34,3 @@ npm run dev
 - `/api/videos360` - 360° video management
 - `/api/favourites` - Favorite management
 
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm start` - Start backend server
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork and submit pull requests.
-
-## 📄 License
-
-ISC License
-
-## 👤 Author
-
-Naveen145-ai
